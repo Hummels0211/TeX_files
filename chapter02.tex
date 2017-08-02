@@ -1,0 +1,327 @@
+\chapter{Mathematical modelling of NPR1/NPR3/NPR4}
+\graphicspath{ {C:/Users/giaccoyu/Desktop/TeXWorks/NPR/} }
+\section{Background}
+Salicylic acid (SA) is an important molecule in plant cell who gets involved in many different physiological signalling pathways at different growing stages. Especially, SA plays key roles as a regulating factor in plant defence such as pathogen invasion. The concentration of salicylic acid increases with the existence of pathogen, alongside the expression elevation of a series of pathogenesis-related (PR) genes. \\
+\begin{center}
+	\setatomsep{1.3em}
+	\schemestart
+	\chemname
+	{\chemfig{*6(-=-(-OH)=(-(=[::+60]O)-[::-60]OH)-=)}}{Salicylic Acid}
+	\schemestop
+\end{center}
+\begin{figure}
+	\centering
+	\includegraphics[width = 10cm]{psb0406_0493_fig001}
+	\caption{This figure shows the two different salicylic acid synthetic pathways in plant cells. \citep{chen2009biosynthesis}}
+	\label{fig:SA_syn}
+\end{figure}
+Currently, two separate pathways for SA biosynthesis were identified in plant cells \citep{chen2009biosynthesis}, one is named as phenylalanine ammonia lyase (PAL) pathway and the another is named as isochorismate synthase (ICS) pathway, based on the different chemical precursor and those corresponding enzymes. Both synthetic pathways share the same precursor called chorismate. Based on the synthetic process showed in Figure \ref{fig:SA_syn}, chorismatic acid can be directly catalysed by ICS and becomes iso-chorismate by swapping the position of the hydroxyl group. Iso-chorismate will be converted into salicylic acid and pyruvic acid by isochorismate pyruvate lyase (IPL), but this is confirmed in bacteria (\textit{Pseudomonas aeruginosa}) \citep{serino1995structural}. In plant cell, the mechanism of IPL-like enzyme is still not very clear yet. In PAL synthetic pathway, chorismate converts into prephenic acid and then to phenynalanine with the enzyme identified as chorismate mutase (CM). PAL can help convert phenylalanine into cinnamic acid after a non-oxidative deamination reaction. PAL is thought to be a very important enzyme in the SA biosynthetic signalling network linking to pathogen immunity or SAR because previous publications showed the evidence of PAL expression induction under pathogenic infection \citep{pallas1996tobacco}.\\
+\begin{center} % Listing the structure of salicylic acid and its analogues
+	\setatomsep{1.3em}
+	\schemestart
+	\chemname
+	{\chemfig{*6((<:HO)-(<OH)-(<OH)-=(-(=[::+60]O)-[::-60]OH)--)}}{Shikimic Acid}
+	~~~~
+	\chemname
+	{\chemfig{*6(-(<:HO)-(<O-[::+60](=[::+60])-(=[::-60]O)-[::+60]OH)-=(-(=[::+60]O)-[::-60]OH)-=)}}{Chorismatic Acid}
+	~~~~
+	\chemname
+	{\chemfig{*6(-=-=(-(=[::+60]O)-[::-60]OH)-=)}}{}
+	\schemestop
+\end{center}
+In the plant cell, salicylic acid can be induced under pathogen infection and then be associated with programmed cell death. Although in Arabidopsis cell, there is a basic SA level is around 1 $\mu$g/g of fresh weight \citep{wildermuth2001isochorismate}, and around 7.24 nM in molarity. When plant is under stress like bacteria infection or oxidative stress, salicylic acid will significantly accumulated to around 10 times higher than the basic SA level \citep{nawrath1999salicylic}. In most occasions, the accumulation effect of SA is thought to be required for the systematic acquired resistance (SAR), although in some research people did not find the accumulation of SA using some pathogens  \citep{delaney1994central}. SAR is described as a long lasting resistance against a broad spectrum of pathogens throughout the whole plant \citep{gao2015signal}. A protein family was identified called pathogenesis-related (PR) proteins, they will quickly respond to the pathogen and they are expressed to rescue the plant from the pathogen .  The expression of a family called pathogenesis-related gene (PR) is a key index to quantify the response of exogeneous pathogen attack, thus PR genes are also regarded as markers of SAR. \\
+NPR1 (\underline{N}onexpressor of \underline{PR} genes1)is a key element in plant salicylic acid immune system, as a part of SAF. NPR1 is transcriptional regulator as it is an important SA signal transducer in the cell, since previous research showed \textit{npr1} mutant plants were less sensitive to SA \citep{cao1997arabidopsis}. \citet{cao1997arabidopsis} also confirmed that \textit{pr1} gene is one of the target of NPR1. \citet{mou2003inducers} found NPR1 has oligomeric and monomeric forms in the cell. Without the accumulation of SA, disulfate bonds help forming NPR1 oligomers. The disulfate bonds connecting multiple NPR1 can be removed under high level of SA, which means the monomeric form of NPR1 will accumulate in the cell under SA elevation.  In nucleus, NPR1 can interact with a transcriptional factor family TGA, and with only TGA2 can initiate the transcription of SAR genes, including PR genes \citep{fan2002vivo}. Those results suggest that it is NPR1 monomer who induce PR genes with the help of TGA2 in nucleus. Also, research showed that SA itself was a receptor of salicylic acid and could directly be bound by SA\citep{wu2012arabidopsis}. Some interesting work also showed phosphorylation of NPR1 monomer was promoted under SAR inducer, which meant the transcription of PR genes required phosphorylated NPR1. At the same time, the phosphorylated NPR1 could be ubiquitinated and then went degredation \citep{spoel2009proteasome}. According to the results by \citet{spoel2009proteasome}, the phosphorylated NPR1 can make a balance of the expression of PR genes.\\ 
+However, only NPR1 is far less enough for the systemic signalling. In plant cell, there are two NPR1 paralogues identified as NPR3 and NPR4 \citep{zhang2006negative}. These two NPR proteins are also found to have regulating functions in SAR, in early research, \citet{zhang2006negative} have identified that both NPR3 and NPR4 can negatively control the expression of PR genes. Moreover, since NPR3 and NPR4 are prologues of NPR1,  \citet{fu2012npr3} also found that both NPR3 and NPR4 can be the receptors of SA \textit{in vitro}, while the affinity between NPR4 and SA is much higher than NPR3 and SA. \citet{fu2012npr3} also found NPR1 could bind to both NPR3 and NPR4, which could be regulated directly by salicylic acid. Under normal condition, which is without SAR, NPR1 tends to combine with NPR4 while under high level of SA (0.1 mM) NPR1 is much easier to combine with NPR3, indicating the increase of SA can promote the formation of NPR1:NPR3 complex but inhibit the formation of NPR1:NPR4 complex. The different behaviours among NPR1, NPR3, NPR4 and SAR related PR genes under increasing SA concentration, suggesting the possible complex mechanism how NPR1, NPR3 and NPR4 regulate the SA signalling in the cell. However, since the level of salicylic acid is believed can directly adjust the fate of cell, the current opinion summarising there are three states based on different concentration of SA. \\
+\begin{figure}
+	\centering
+	\includegraphics[width=13cm]{SAR_Mode}
+	\caption{In real environment, microbe pathogen infection usually starts from a very small area. In this area, the concentration of salicylic acid is very high and surpass the minimum level required by the affinity between SA and NPR3. Salicylic acid binds to NPR3 and form NPR1:NPR3 complex, which can be ubiquitinated to degradation. Around the pathogen infected area, although there is no pathogen exist in these cell, a considerable SA level is still higher than normal. The combination between NPR1 and NPR4 is broken, and free NPR1 can initiate the expression of PR genes with SA and TGA2. The cells in this area will not go cell death, because overexpression of PR genes can protect the plant cell from PCD. This figure is modified from \citep{gust2012plant}.}
+\end{figure}
+The basic SA concentration does not induce any SAR in the cell, since all the SA comes from normal intracellular biosynthesis. Under high SA level, more NPR1 tends to combine with NPR3, in fact, this condition represents local immunity effect where the plant tissue is exposed to pathogen infection. It is an extreme case for the cell since it can associate with programmed cell death \citep{morel1997hypersensitive}. An intermediate condition is often described as systemic immunity, from the site of pathogen infection, the concentration of SA decreases as the distance increases. So between non-responsive cells and local immune cells, there are cells under medium level of SA. In this case, salicylic acid cannot bind to NPR3 to form NPR1:NPR3 complex, due to low affinity between SA and NPR3. The local immunity associated PCD can be stopped because NPR1:NPR3 cannot accumulate. Generally, the plant cell has at least three different types in response of salicylic acid gradient based on the different affinity between SA and the three NPR regulators. That is also very easy to understand since the whole plant try to control the expanding of cells falling to PCD.\\
+\begin{figure}
+	\centering
+	\includegraphics[width=13cm]{Figure-2-Models-for-salicylic-acid-SA-perception-inplanta-a-d-The-data-of-Fu}
+	\caption{The current view of NPR1/NPR3/NPR4 salicylic acid immulnological resistance in plant cell \citep{liu2015salicylic}. a. In salicylic acid-free environment, free NPR1 will bind to NPR4 and then ubiquitinated to be recycled, however, this situation is only existed in salicylic acid-free mutant. b. In normal condition, the salicylic acid concentration maintains at a very low level, however, because of very high affinity between salicylic acid and NPR4, NPR1 can be released from NPR1:NPR4 complex. The released free NPR1 can initiate some basic defensive genes' expression, but there is still part of NPR1 maintains linked with NPR4 to be ubiquitinated. c. Increased salicylic acid level will further eliminate NPR1:NPR4 complex, under this condition, free NPR1 will cooperate with TGA2 to initiate PR1's expression. d. Effectro-triggered immunity (ETI) represents the most severe situation that a cell faces over-accumulation of salicylic acid. PCD is highly associated with ETI, however, NPR3, another SA receptor, can recruit SA in the nucleus by binding with NPR1 to form SA:NPR1:NPR3, SA:NPR1:NPR3 is then be ubiquitinated and go degradation. e. The mode of how pr1 gene is transcribed. In normal condition, where there is little free salicylic acid. NPR1 tend to form oligomers with the assistance of metal ions like Cu\textsuperscript{2+}, Cu\textsuperscript{2+} can optimise the conformation of NPR1 under SA, which is an important step of initiating the transcription of \textit{pr1} gene \citep{wu2012arabidopsis}.}
+	\label{fig:NPR1_mode}
+\end{figure}
+\linebreak
+\section{Mathematical Models of SA signalling}
+\subsection{Logical Model (Boolean Network)}
+The first step of modelling this biological system is to use logical networks. Based on the Fig.\ref{fig:NPR1_mode}, we assume there are four different input levels of salicylic acid (SA) as input. In our assumption, the level of SA varies from 0 to 3. We start discussing the simplest situation, where SA=0. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics{SA_0_logical}
+	\caption{While SA=0, only NPR1 penetrates into the nucleus, where NPR1 can be detected by NPR4 to form a complex NPR1:NPR4. NPR1:NPR4 can be ubiquitinated to degradation and the negative arrow pointing to itself representing that self degradation process. NPR4 is stable in nucleus and it can either be free or NPR1-dependent, which is reversible.}
+	\label{fig:SA_0}
+\end{figure}
+In this case, the equation system only contains 4 related components. The dynamic can be described in the following equations:\\
+\begin{align*}
+[SA] &\equiv 0 \\
+[NPR1] &\equiv 1 \\
+[NPR4] &= [N_1:N_4] \wedge (\neg [NPR4]) \\
+[N_1:N_4] &= [NPR1] \wedge[NPR4] \wedge (\neg [N_1:N_4])
+\end{align*}
+The time-series truth value table is listed below:\\
+
+\begin{tabular}[H]{c c c c c}
+	\hline
+	Time Step & \textsf{\textbf{$[SA]$}} &\textsf{\textbf{$[NPR1]$}} & \textsf{\textbf{$[NPR4]$}} & \textsf{\textbf{$[N_1:N_4]$}} \\
+	\hline
+	$t_{(0)}$ & 0 & 1 & 1 & 0 \\
+	$t_{(1)}$ & 0 & 1 & 0 & 1 \\
+	$t_{(2)}$ & 0 & 1 & 1 & 0 \\
+	$t_{(3)}$ & 0 & 1 & 0 & 1 \\
+	$t_{(4)}$ & 0 & 1 & 1 & 0 \\
+	$t_{(5)}$ & 0 & 1 & 0 & 1 \\
+	\hline
+\end{tabular}
+\linebreak
+It is quite simple and the only two components, $NPR4$ and $N_1:N_4$ switch on alternately. This is reasonable since it means under salicylic acid free condition, only NPR1's importation and binding\&dissociation with NPR4. \\
+Then we try to increase the SA level. Based on the current affinity data of salicylic acid and different NPR proteins \citep{fu2012npr3}, so firstly, SA can easily be attached to NPR4, which increase the complexity of the whole system.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics{SA_1_logical}
+	\caption{In this case which low amount of salicylic acid exist in cell and can capture NPR4 from NPR1:NPR4 complex.}
+	\label{fig:SA_1}
+\end{figure}
+Under basic SA level, a new element SA:NPR4 is added into the system. \\
+\begin{align*}
+[SA] &\equiv 1 \\
+[NPR1] &\equiv 1 \\
+[NPR4] &= [N_1:N_4] \wedge (\neg [NPR4]) \\
+[N_1:N_4] &= [NPR1] \wedge[NPR4] \wedge (\neg [N_1:N_4]) \\
+[SA:N_4] &= [SA] \wedge [NPR4]
+\end{align*}
+The truth value table is listed below: \\
+
+\begin{tabular}[h]{c c c c c c}
+	\hline
+	\textsf{\textbf{Time Step}} & \textsf{\textbf{$[SA]$}} & \textsf{\textbf{$[NPR1]$}} & \textsf{\textbf{$[NPR4]$}} & \textsf{\textbf{$[N_1:N_4]$}} & \textsf{\textbf{$[SA:N_4]$}} \\
+	\hline
+	$t_{(0)}$ & 1 & 1 & 1 & 0 & 0 \\
+	$t_{(1)}$ & 1 & 1 & 0 & 1 & 1 \\
+	$t_{(2)}$ & 1 & 1 & 1 & 0 & 0 \\
+	$t_{(3)}$ & 1 & 1 & 0 & 1 & 1 \\
+	$t_{(4)}$ & 1 & 1 & 1 & 0 & 0 \\
+	$t_{(5)}$ & 1 & 1 & 0 & 1 & 1 \\
+	\hline
+\end{tabular}
+\linebreak
+From the true value table, we can find that the new added $[SA:N_4]$ behaves consistant with $[N_1:N_4]$. The whole system is still switching within two different states.\\
+In our assumption, under medium SA level, in which SA can trigger on another pathway. SA can now bind to NPR1 to form SA:NPR1 complex. SA:NPR1 is required for the expression of PR1. SA:NPR1 is the activated form and can bind on the promoter of \textit{pr1} gene and start transcription with TGA2. At the same time, \\
+\begin{figure}[H]
+	\centering
+	\includegraphics{SA_2_logical}
+	\caption{Under the medium SA level, SA and free NPR1 can form  SA:NPR1, which can induce the expression of PR1. At the same time, NPR1:NPR4 cannot co-exist with SA:NPR1 since the affinity constant between SA and NPR4 is much lower than SA and NPR1. Since SA can be attached to NPR4 in priority. So if SA:NPR1 exists, that means NPR1:NPR4 is depleted.}
+\end{figure}
+In this case, SA:NPR1 and PR1 are added into the model. SA:NPR1 is dependent on the existance of SA and NPR1, but is inhibited by the pro-survival complex NPR1:NPR4. PR1 can be only triggered by the activated NPR1, which is combined with salicylic acid. \\
+\begin{align*}
+[SA] &\equiv 1 \\
+[NPR1] &\equiv 1 \\
+[NPR4] &= [N_1:N_4] \wedge (\neg [NPR4]) \\
+[N_1:N_4] &= [NPR1] \wedge[NPR4] \wedge (\neg [N_1:N_4]) \\
+[SA:N_4] &= [SA] \wedge [NPR4] \\
+[SA:N_1] &= [SA] \wedge [NPR1] \wedge (\neg [N_1:N_4]) \\
+[PR1] &= [SA:N_1]
+\end{align*}
+The truth value table of all the components is: \\
+\begin{tabular}{c c c c c c c c}
+	\hline
+	\footnotesize\textbf{\textsf{Time Step}} & \footnotesize$[SA]$ & \footnotesize$[NPR1]$ & \footnotesize$[NPR4]$ & \footnotesize$[N_1:N_4]$ & \footnotesize$[SA:N_4]$ & \footnotesize$[SA:N_1]$ & \footnotesize$[PR1]$ \\
+	\hline
+	$t_{(0)}$ & 1 & 1 & 0 & 1 & 0 & 0 & 0 \\
+	$t_{(1)}$ & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+	$t_{(2)}$ & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\
+	$t_{(3)}$ & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
+	$t_{(4)}$ & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\
+	$t_{(5)}$ & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
+	$t_{(6)}$ & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\
+	\hline
+\end{tabular}
+\linebreak
+The result shows that the system will switch between two states from $t_{(2)}$. The expression of PR1 can be switched on from $t_{(3)}$. As the result, under medium SA level, PR1 can be expressed continuously as an important defensive mechanism. \\
+For the most complicated scenario, in this case, which the concentration of salicylic acid is very high. The concentration of SA reaches the minimum requirement of forming SA:NPR3. SA:NPR3 can further combine with NPR1 to form SA:NPR1:NPR3, which can be ubiquitinated to degradation, also it is the last defensive mechanism to reduce the intra-cellular SA amount. Moreover, PR1 transcription is prohibited when SA concentration is very high according to . \\
+\begin{figure}[H]
+	\centering
+	\includegraphics{SA_3_logical}
+	\caption{With the most severe SA treatment, a new branch is activated. In this condition, SA can attach on NPR3 to form SA:NPR3 and to form SA:NPR1:NPR3 with NPR1 for further combination. }
+\end{figure}
+In this model, the logical equation systems include SA:NPR3 and SA:NPR1:NPR3. \\
+\begin{align*}
+[SA] &\equiv 1 \\
+[NPR1] &\equiv 1 \\
+[NPR4] &= [N_1:N_4] \wedge (\neg [NPR4]) \\
+[N_1:N_4] &= [NPR1] \wedge[NPR4] \wedge (\neg [N_1:N_4]) \\
+[SA:N_4] &= [SA] \wedge [NPR4] \\
+[SA:N_1] &= [SA] \wedge [NPR1] \wedge (\neg [N_1:N_4]) \\
+[SA:N_3] &= [SA] \\
+[SA:N_1:N_3] &= [NPR1] \wedge [SA:N_3] \wedge (\neg [SA:N_1:N_3]) \\
+[PR1] &= [SA:N_1] \wedge (\neg [SA:N_1:N_3])
+\end{align*}
+The truth value table is listed below: \\
+\begin{tabular}{c c c c c c c c c c}
+	\hline
+	\scriptsize\textsf{\textbf{Time Step}} & \scriptsize$[SA]$ & \scriptsize$[NPR1]$ & \scriptsize$[NPR4]$ &\scriptsize$[N_1:N_4]$ & \scriptsize$[SA:N_4]$ & \scriptsize$[SA:N_1]$ & \scriptsize$[SA:N_3]$ & \scriptsize$[SA:N_1:N_3]$ & \scriptsize$[PR1]$ \\
+	\hline
+	$t_{(0)}$ & 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+	$t_{(1)}$ & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+	$t_{(2)}$ & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
+	$t_{(3)}$ & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+	$t_{(4)}$ & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
+	$t_{(5)}$ & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+	$t_{(6)}$ & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
+	\hline
+\end{tabular}
+\linebreak
+An important difference exists in this condition is the expression of PR1. With the intervention of SA:NPR1:NPR3, finally there is no expression of PR1, which fits the observation 
+\clearpage
+\subsection{Spatial diffusion}
+Currently, the mechanism 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=13cm]{Sqr_diff}
+	\caption{Text}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=13cm]{Hex_diff}
+	\caption{The hexagon mode of }
+\end{figure}
+\clearpage
+\subsection{Patrick's Model}
+According to Patrick, the reaction system should look like,
+\begin{chemmath}
+	NPR4 + NPR1 
+	\reactrarrow{0pt}{1.5cm}{\ChemForm{SA}}{}
+	[NPR4:NPR1]
+\end{chemmath}
+\begin{chemmath}
+	NPR3 + NPR1
+	\reactrarrow{0pt}{1.5cm}{\ChemForm{SA}}{}
+	[NPR3:NPR1]
+\end{chemmath}
+\begin{chemmath}
+	NPR1
+	\reactrarrow{0pt}{1.5cm}{\ChemForm{SA}}{}
+	NPR1^{\ast}
+\end{chemmath}
+\begin{chemmath}
+	pr1
+	\reactrarrow{0pt}{1.5cm}{\ChemForm{NPR1^{\ast}}}{}
+	PR1
+\end{chemmath}
+\begin{chemmath}
+	NPR1 + SA 
+	\reactrarrow{0pt}{1.5cm}{?}{}
+	[NPR1:SA]
+\end{chemmath}
+The last reaction is thought to be unknown right now, so a question mark remains on the arrow in the reaction. \\
+The detailed chemical reactions are
+\begin{gather}\label{P_re_I}
+NPR4 + SA \xrightleftharpoons[k_4^-]{k_4} [NPR4:SA] \\
+[NPR4:SA] + NPR1 \xrightleftharpoons[]{} [NPR1:NPR4:SA] \\
+[NPR1:NPR4:SA] \xrightarrow{} [NPR1:NPR4] + SA
+\end{gather}
+\begin{gather}
+NPR3 + SA \xrightleftharpoons[k_3^-]{k_3} [NPR3:SA] \\
+[NPR3:SA] + NPR1 \xrightleftharpoons[]{} [NPR1:NPR3:SA] \\
+[NPR1:NPR3:SA] \xrightarrow{} [NPR1:NPR3] + SA
+\end{gather}
+\begin{gather}
+NPR1 + SA \xrightleftharpoons[k_1^{-}]{k_1} [NPR1:SA] \xrightarrow{} NPR1^{\ast} + SA
+\end{gather}
+\begin{gather}
+pr1 + NPR1^{\ast} \xrightleftharpoons[]{} [pr1:NPR1^{\ast}] \xrightarrow{} PR1 + NPR1^{\ast}
+\end{gather}
+\begin{gather}
+NPR1 + SA \xrightleftharpoons[k_1^{-}]{k_1} [NPR1:SA].
+\end{gather}
+The reactions from 1.1 to 1.3 are the detailed process of reaction I. 1.4 to 1.5 are based on reaction II. 1.7 is the process of self activation of NPR1. 1.8 represents pr1 gene's transcription. Finally, reaction 1.9 represents an alternative mechanism of how NPR1 is activated.\\
+Using ODE equations, we \\
+Another reaction model, which is much simpler, is shown in the following chart.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{PMod_NPR1_NPR4}
+	\caption{This figure shows a simplified biochemical reaction illustrating how NPR1 and NPR4 bind together under the presence of salicylic acid. The total reaction contains two steps. Firstly, NPR1, NPR4 and salicylic acid bind together, forming a trimer [NPR1:NPR4:SA], which we suggest as a reversible process. Finally, salicylic acid dissociate from the complex, leaving the NPR1-NPR4 complex as the final reaction product.}
+	\label{fig:PMod_NPR1_NPR4}
+\end{figure}
+From Figure \ref{fig:PMod_NPR1_NPR4}, we suggest a simplified enzymatic reaction model. The reaction can be described as\\
+\begin{gather}\label{PMod_NPR1_NPR4}
+SA + NPR1 + NPR4 \xrightleftharpoons[k_4-]{k_4} [NPR1:NPR4:SA]\\
+[NPR1:NPR4:SA] \xrightarrow{k_4'} [NPR1:NPR4] + SA
+\end{gather}
+Using ODEs, we get\\
+\begin{align}
+\dfrac{d[E]}{dt} &= -k_4[S_1][S_4][E] + k_4^{-}[S_1 S_4 E] + k_4'[S_1 S_4 E] \label{PMod_N1_N4_ODE_1}\\
+\dfrac{d[S_1]}{dt} &= -k_4[S_1][S_4][E] + k_4^{-}[S_1 S_4 E] \label{PMod_N1_N4_ODE_2}\\
+\dfrac{d[S_4]}{dt} &= -k_4[S_1][S_4][E] + k_4^{-}[S_1 S_4 E] \label{PMod_N1_N4_ODE_3}\\
+\dfrac{d[S_1 S_4 E]}{dt} &= +k_4[S_1][S_4][E] - k_4^{-} [S_1 S_4 E] - k_4'[S_1 S_4 E] \label{PMod_N1_N4_ODE_4}\\
+\dfrac{d[S_1 S_4]}{dt} &= +k_4' [S_1 S_4 E] \label{PMod_N1_N4_ODE_5}
+\end{align}
+In this ODE system, we suggest salicylic acid as the enzyme, which help the synthesis of NPR1 nad NPR4. So we use $E$ as the symbol to indicate salicylic acid. NPR1 and NPR4 are reaction substrates, so $S_1$ and $S_4$ represent NPR1 and NPR4 respectively. Then $[S_1 S_4 E]$ is the unstable transition state, and also a complex with NPR1, NPR4 and SA. The final reaction product will be $[S_1 S_4]$ as the assumption of the reaction mechanism. Moreover, $k_4$, $k_4^{-}$ and $k_4'$ are all reaction constants following each reaction arrow.\\
+The initial condition, 
+From the ODEs, we notice that the sum of equation \ref{PMod_N1_N4_ODE_1} and equation \ref{PMod_N1_N4_ODE_4} equals to 0, which is quite obvious. Then we calculate the integral of SA and [NPR1:NPR4:SA].
+\begin{align*}
+\int (\dfrac{d[E]}{dt} + \dfrac{d[S_1 S_4 E]}{dt}) dt = \textrm{Constant} = [E]_{(0)} + [S_1 S_4 E]_{(0)}\\
+\centering
+[E] = [E]_{(0)} + [S_1 S_4 E]_{(0)} - [S_1 S_4 E]
+\end{align*}
+Then we replace $[E]$ in equation \ref{PMod_N1_N4_ODE_4}, we get
+\begin{align}
+\dfrac{d[S_1 S_4 E]}{dt} &= + k_4[S_1][S_4]([E]_{(0)} + [S_1 S_4 E]_{(0)} - [S_1 S_4 E]) - k_4^{-} [S_1 S_4 E] - k_4'[S_1 S_4 E]\\
+&= +k_4[S_1][S_4]([E]_{(0)}+[S_1 S_4 E]_{(0)}) - (k_4[S_1][S_4] + k_4^{-} - k_4')[S_1 S_4 E] \label{eq:PMod_ode}
+\end{align}
+Using quasi-steady state assumption, we suppose the concentration of the substrates NPR1 and NPR4 is much higher than SA ($[E]\ll[S_1], [E]\ll[S_4]$). As the result, both $[S_1]$ and $[S_4]$ can be regarded as constants. Therefore the equation \ref{eq:PMod_ode} can be written as\\
+\begin{equation} \label{eq:PMod_S1S4E}
+\frac{d[S_1 S_4 E]}{dt} + K[S_1 S_4 E] - C = 0
+\end{equation}
+In which we let $K = k_4[S_1][S_4] + k_4^{-} + k_4'$, and $C = k_4[S_1][S_4]([E]_{(0)}+[S_1 S_4 E]_{(0)})$. The first order ODE (equation \ref{eq:PMod_S1S4E}) has very simple general solution, which is
+\begin{equation} \label{eq:PMod_ode_solution}
+[S_1 S_4 E](t) = \dfrac{C}{K} + \alpha e^{-Kt}
+\end{equation}
+The solution \ref{eq:PMod_ode_solution} gives the expression of the concentration of $[S_1 S_4 E]$ over time $t$. Notice there is another constant $\alpha$, which can be confirmed using initial condition. Commonly we suggest at the beginning of the reaction, the concentration of $[S_1 S_4 E]$ and $[S_1 S_4]$ are equal to 0. So we have a set of initial conditions below
+\begin{align} \label{eq:PMod_ode_initial_conditions}
+\begin{split}
+[E](0) = & [E]_{(0)},~~[S_1](0) = [S_1]_{(0)},~~[S_4](0) = [S_4]_{(0)}, \\
+& [S_1 S_4 E](0) = 0,~~[S_1 S_4](0) = 0
+\end{split}
+\end{align}
+Using $[S_1 S_4 E](0) = 0$ in equation \ref{eq:PMod_ode_solution}, then we get $\alpha = [S_1 S_4 E]_{(0)} - \frac{C}{K}$. So the expression of $[S_1 S_4]$ is 
+\begin{equation}
+[S_1 S_4 E](t) = \dfrac{C}{K} + ([S_1 S_4 E]_{(0)}-\dfrac{C}{K})e^{-Kt}
+\end{equation}
+Using quasi-steady-state approximation method, the concentration of the trimer can be written as
+\begin{equation} \label{eq:PMod_ode_approximation}
+[S_1 S_4 E] = \dfrac{C}{K} = \dfrac{k_4[S_1][S_4]([E]_{(0)}+[S_1 S_4 E]_{(0)})}{k_4[S_1][S_4]+k_4^{-}+k_4'}
+\end{equation}
+Finally we apply the approximation in equation \ref{eq:PMod_ode_approximation} and the initial conditions \ref{eq:PMod_ode_initial_conditions} to equation \ref{PMod_N1_N4_ODE_5}, the concentration change of the product [NPR1:NPR4] is given as
+\begin{equation} \label{eq:PMod_product}
+\dfrac{d[S_1 S_4]}{dt} = \dfrac{k_4'[E]_{(0)}[S_1][S_4]}{[S_1][S_4]+K_4}
+\end{equation}
+The equation \ref{eq:PMod_product} we got looks quite close to Michaelis-Menten model, but with two different substrates. We also notice that the constant $K_4$, where $K_4 = \frac{k_4^{-}+k_4'}{k_4}$. $K_4$ is similar with Michaelis constant, here we assume that $K_4$ has the same meaning as $K_{D4}$, which represents the affinity constant in enzymatic reaction.\\
+Now we list the whole biochemical reactions \\
+\begin{gather}
+SA + NPR1 + NPR4 \xrightleftharpoons[k_4^{-}]{k_4} [NPR1:NPR4:SA] \\
+[NPR1:NPR4:SA] \xrightarrow{k_4'} [NPR1:NPR4] + SA
+\end{gather}
+\begin{gather}
+SA + NPR1 + NPR3 \xrightleftharpoons[k_3^{-}]{k_3} [NPR1:NPR3:SA] \\
+[NPR1:NPR3:SA] \xrightarrow{k_3'} [NPR1:NPR3] + SA
+\end{gather}
+\begin{gather}
+NPR1 + SA \xrightleftharpoons[k_1^{-}]{k_1} [NPR1:SA] \xrightarrow{k_1'} NPR1^{\ast} + SA
+\end{gather}
+\begin{gather}
+pr1 \xrightarrow{} pr1 mRNA \xrightarrow{} PR1
+\end{gather}
+Based on the important conclusion in equation \ref{eq:PMod_product}, we now put up a new ODE system. The total reaction 
+\begin{align}
+\dfrac{d[S_1]}{dt} &=   \label{eq:PMod_S_1} \\ 
+\dfrac{d[S_3]}{dt} &=  	\label{eq:PMod_S_3} \\
+\dfrac{d[S_4]}{dt} &=   \label{eq:PMod_S_4} \\
+\dfrac{d[S_1 S_4]}{dt} &=     \label{eq:PMod_S_1_S_4} \\
+\dfrac{d[S_1 S_3]}{dt} &=	  \label{eq:PMod_S_1_S_3} \\
+\dfrac{d[S_1^{\ast}]}{dt} &=      \label{eq:PMod_S_1*} \\
+\dfrac{}{} &= 
+\end{align}
+\subsection{Jia's Model}
