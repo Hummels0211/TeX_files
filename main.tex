@@ -1,0 +1,84 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{empheq}
+\usepackage[version=4]{mhchem}
+\usepackage{chemist}
+\usepackage{chemfig}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+%\usepackage{fixltx2e}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{rotating}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{natbib}
+\bibliographystyle{agsm}
+
+\usepackage[english]{babel}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+
+%\usepackage{emptypage} %Eliminating the blank page between chapters, work with \input 
+
+\usepackage{rotating}
+	
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{appendix} % Provide the environment for setting up appendices.
+
+\begin{document}
+\graphicspath{{C:/Users/giaccoyu/Desktop/TeXWorks/Fig/Presentations/}}
+
+\author{Jia Yu}
+\title{The mathematical modelling of unfolded protein respose in \textit{Arabidopsis thaliana} }
+%\includegraphics[width=5cm]{UoM-Crest}
+\date{\today}
+
+\frontmatter
+\maketitle
+\linespread{0.8}
+\listoffigures
+\listoftables
+\tableofcontents
+
+
+\mainmatter
+\linespread{1.2}
+\pagenumbering{roman}
+\include{./TeX_files/Abstract}
+\include{./TeX_files/Copyright}
+
+\pagenumbering{arabic}
+\input{./TeX_files/Introduction}
+\input{./TeX_files/chapter01}
+\include{./TeX_files/BasicModel}
+\include{./TeX_files/Results}
+\include{./TeX_files/chapter02}
+\include{./TeX_files/Conclusions}
+
+
+
+\backmatter
+% bibliography, glossary and index would go here.
+\appendix
+\begin{appendices}
+	\include{./TeX_files/AppendicesA}
+	\include{./TeX_files/AppendicesB}
+\end{appendices}
+\bibliographystyle{plainnat}
+\bibliography{C:/Users/giaccoyu/Desktop/TeXWorks/Theses/Bibiliography/bibiliotheque}
+\end{document}
